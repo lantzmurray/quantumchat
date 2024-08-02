@@ -1,4 +1,8 @@
 import streamlit as st
+import cohere
+import os
+import textwrap
+import json
 
 st.title("🎈 My new app")
 st.write(
