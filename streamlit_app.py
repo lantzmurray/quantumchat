@@ -2,17 +2,17 @@ import streamlit as st
 import cohere
 
 # Streamlit App Title
-st.title("Lantz Murray - 🎈 My new app")
+st.title("Quantum Learning Assistant - by Lantz Murray")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "Welcome to your Quantum Computing learning companion! This app is designed to assist you in understanding and mastering the concepts of quantum computing and Qiskit."
 )
-tab1, tab2, tab3 = st.tabs(["Cohere API Key", "Chat", "About"])
+tab1, tab2, tab3 = st.tabs(["Cohere API Key", "Chat and Learn", "About"])
 
 with tab1:
     st.header("Cohere API Key")
-    st.write("Enter your *Cohere! API key* below.")
-    st.write(" *If you don't have an API key go to :* https://cohere.com to sign up for one")
-    API_KEY = st.text_input('Cohere! API KEY', key='cohere_api_key', type="password")
+    st.write("Enter your *Cohere API key* below to get started.")
+    st.write(" *If you don't have an API key, you can sign up at:* [cohere.com](https://cohere.com)")
+    API_KEY = st.text_input('Cohere API Key', key='cohere_api_key', type="password")
     
 with tab2:
     st.header("Chat and Learn")
@@ -72,5 +72,5 @@ with tab2:
         st.write("Please enter your Cohere API key in the first tab.")
 
 with tab3:
-    st.header("About Lantz Murray")
-    st.write("This is a simple Streamlit app to demonstrate using the Cohere API.")
+    st.header("About Quantum Learning Assistant")
+    st.write("This app, developed by Lantz Murray, is a simple yet powerful tool to help you dive into the fascinating world of quantum computing using the Cohere API. Whether you're a beginner or looking to deepen your understanding, this assistant is here to guide you every step of the way.")
